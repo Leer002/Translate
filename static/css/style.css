@@ -1,0 +1,20 @@
+/* * {
+    font-size: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 0.2rem solid darkblue;
+    background-color: darkseagreen;
+    padding: 0.5rem;
+    width: 13%;
+    transition: width .6s ease-in-out;
+}
+
+.input:focus {
+    width: 50%;
+} */

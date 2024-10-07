@@ -1,0 +1,6 @@
+# Django
+Django==4.2
+
+# Translate
+googletrans==4.0.0rc1
+
