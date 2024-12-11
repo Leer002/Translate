@@ -1,20 +1,102 @@
-/* * {
-    font-size: 16px;
+* {
+    box-sizing: border-box;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 748px;
+}
 .form {
     display: flex;
     flex-direction: column;
 }
 
-.input {
-    border: 0.2rem solid darkblue;
-    background-color: darkseagreen;
-    padding: 0.5rem;
-    width: 13%;
-    transition: width .6s ease-in-out;
+label {
+    border-left: 3px solid slateblue;
+    /* border-right: 3px solid slateblue; */
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: larger;
 }
 
-.input:focus {
-    width: 50%;
-} */
+textarea {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    resize: none;
+    border: 2px solid gray;
+    transition: border .4s ease-in;
+    
+}
+
+textarea:focus {
+    outline: none;
+    border: 3px solid darkblue;
+    padding: 5px;
+}
+
+select {
+    border-radius: 10px;
+    height: 30px;
+    border: 2px solid gray;
+    transition: border .4s ease-in;
+}
+
+select:focus{
+    border: 3px solid darkblue;
+}
+
+
+.button {
+    width: fit-content;
+    justify-self: center;
+    border-radius: 10px;
+    border: 3px dashed slateblue;
+    padding: 4px;
+}
+
+.button:hover {
+    background-color: rgb(167, 206, 222);
+}
+
+.button:active {
+    border: 3px solid slateblue
+}
+
+.error {
+    justify-self: center;
+    font-size: 40px;
+    border-bottom: 4px solid darkcyan;
+    padding-bottom: 0px;
+}
+
+div.result-form {
+    justify-self: center;
+    margin-top: 30px;
+}
+
+button.result-form {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+button.result-form:active {
+    background-color: cornflowerblue;
+}
+
+.result {
+    justify-self: center;
+    font-size: 40px;
+    border-bottom: 4px solid darkcyan;
+    padding-bottom: 0px;
+}
